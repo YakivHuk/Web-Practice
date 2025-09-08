@@ -400,13 +400,14 @@ h1 {
 }
 
 .hero-section:before {
-    left: 100px;
+    left: 48px;
 }
 
 .hero-section:after {
-    left: 50px;
+    left: -2px;
 }
 
+/*--------Animation--------*/
 @keyframes closeBurgerMenu {
     0% {
         filter: blur(0px);
@@ -642,4 +643,5 @@ h1 {
         height: 25px;
         transform: translate(475px, -30px);
     }
+
 }
