@@ -336,6 +336,7 @@ body {
 
 h1 {
     color: white;
+    font-size: 32px;
     text-align: center;
     font-weight: 700;
     letter-spacing: -2px;
@@ -344,19 +345,21 @@ h1 {
 }
 
 .yellow-underline-text {
+    position: relative;
     color: #EEC044;
 }
 
 .yellow-underline-text:after {
     content: "";
-    display: block;
+    display: lock;
     position: absolute;
+    top: 32px;
+    left: 8px;
     width: 107px;
     height: 12.45px;
     background-image: url("../images/underline.png");
     background-size: contain;
     background-repeat: no-repeat;
-    transform: translate(180px, -10px);
 }
 
 .button {
@@ -408,6 +411,7 @@ h1 {
 }
 
 /*--------Animation--------*/
+
 @keyframes closeBurgerMenu {
     0% {
         filter: blur(0px);
@@ -420,7 +424,7 @@ h1 {
     }
 }
 
-/*--------Media quaries---------*/
+/*--------Media quaries--------*/
 @media screen and (min-width: 481px) {
     .content-wrap {
         width: 60%;
@@ -550,9 +554,10 @@ h1 {
     }
 
     .yellow-underline-text:after {
+        top: 60px;
+        left: 16px;
         width: calc(107px * 1.8);
         height: calc(12.45px * 1.8);
-        transform: translate(395px, -20px);
     }
 }
 
@@ -639,9 +644,9 @@ h1 {
     }
 
     .yellow-underline-text:after {
+        top: 80px;
+        left: 24px;
         width: 215px;
         height: 25px;
-        transform: translate(475px, -30px);
     }
-
 }
