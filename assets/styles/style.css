@@ -189,15 +189,16 @@ body {
     transition: all .3s ease-out;
 }
 
-.burger-button {
-    text-align: center;
+.burger-button:hover > .burger {
+    margin-left: -1px;
 }
 
 .burger {
     display: inline-block;
     position: relative;
     top: -4px;
-    height: 2px;
+    left: 0;
+    height: 1.5px;
     width: 12px;
     background-color: white;
     border-radius: 1px;
