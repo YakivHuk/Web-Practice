@@ -92,8 +92,8 @@ body {
     z-index: 2;
 }
 
-.social-networks {
-    display: flex !important;
+.links {
+    display: flex;
     justify-content: space-around;
 }
 
@@ -501,12 +501,12 @@ h1 {
         transition: none;
     }
 
-    .social-networks {
+    .links {
         align-items: center;
         width: 160px;
     }
 
-    .social-networks > .icon {
+    .links > .icon {
         height: 30px;
         width: 30px;
         font-size: 15px;
@@ -572,12 +572,12 @@ h1 {
         width: 190px;
     }
 
-    .social-networks {
+    .links {
         height: 70px;
         width: 195px;
     }
 
-    .social-networks > .icon {
+    .links > .icon {
         width: 40px;
         height: 40px;
         line-height: 40px;
@@ -651,4 +651,3 @@ h1 {
         height: 25px;
     }
 }
-
