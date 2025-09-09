@@ -352,7 +352,7 @@ h1 {
 
 .yellow-underline-text:after {
     content: "";
-    display: lock;
+    display: block;
     position: absolute;
     top: 32px;
     left: 8px;
