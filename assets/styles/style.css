@@ -93,7 +93,7 @@ body {
 }
 
 .social-networks {
-    display: flex;
+    display: flex !important;
     justify-content: space-around;
 }
 
@@ -651,3 +651,4 @@ h1 {
         height: 25px;
     }
 }
+
