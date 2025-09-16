@@ -20,7 +20,7 @@ body {
 /**--------End of general styles--------**/
 
 /**--------Styles for the hero section--------**/
-.hero-section {
+.header-section {
     background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
@@ -117,7 +117,7 @@ body {
     z-index: 2;
 }
 
-.hero-section .links {
+.header-section .links {
     display: flex;
     justify-content: space-around;
 }
@@ -331,7 +331,7 @@ body {
 /**--------End of styles for the navigation bar--------**/
 
 /**--------Styles for the hero section content--------**/
-.hero-section > .content-wrap {
+.header-section > .hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,7 +343,7 @@ body {
     min-height: 100vh;
 }
 
-.hero-section .arrow {
+.header-section .arrow {
     position: absolute;
     top: 60%;
     height: 33px;
@@ -353,11 +353,11 @@ body {
     opacity: 30%;
 }
 
-.hero-section .left-arrow {
+.header-section .left-arrow {
     left: 10px;
 }
 
-.hero-section .right-arrow {
+.header-section .right-arrow {
     right: 10px;
 }
 
@@ -418,8 +418,8 @@ h1 {
     transition: none;
 }
 
-.hero-section:before,
-.hero-section:after {
+.header-section:before,
+.header-section:after {
     content: "";
     display: block;
     position: absolute;
@@ -431,11 +431,11 @@ h1 {
     opacity: 0.06;
 }
 
-.hero-section:before {
+.header-section:before {
     left: 48px;
 }
 
-.hero-section:after {
+.header-section:after {
     left: -2px;
 }
 /**--------End styles for the hero section content--------**/
@@ -456,7 +456,7 @@ h1 {
 
 /*--------Media quaries--------*/
 @media screen and (min-width: 481px) {
-    .content-wrap {
+    .hero-section {
         width: 60%;
     }
 
@@ -472,16 +472,16 @@ h1 {
         right: 0;
     }
 
-    .hero-section:before,
-    .hero-section:after {
+    .header-section:before,
+    .header-section:after {
         width: 200px;
     }
 
-    .hero-section:before {
+    .header-section:before {
         left: 100px;
     }
 
-    .hero-section:after {
+    .header-section:after {
         left: 0px;
     }
 }
@@ -491,19 +491,29 @@ h1 {
         display: inline-block;
     }
 
-    .hero-section:before,
-    .hero-section:after {
+    .header-section:before,
+    .header-section:after {
         width: 307.0397944147263px;
     }
 
-    .hero-section:before {
+    .header-section:before {
         left: 117.16px;
     }
 
-    .hero-section:after {
+    .header-section:after {
         left: -36.45px;
     }
 
+        h1 {
+        font-size: 48px;
+    }
+
+    .yellow-underline-text:after {
+        top: 46px;
+        left: 10px;
+        width: calc(107px * 1.5);
+        height: calc(12.45px * 1.5);
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -530,12 +540,12 @@ h1 {
         transition: none;
     }
 
-    .hero-section .links {
+    .header-section .links {
         align-items: center;
         width: 160px;
     }
 
-    .hero-section .links > .icon {
+    .header-section .links > .icon {
         height: 30px;
         width: 30px;
         font-size: 15px;
@@ -612,12 +622,12 @@ h1 {
         width: 190px;
     }
 
-    .hero-section .links {
+    .header-section .links {
         height: 70px;
         width: 195px;
     }
 
-    .hero-section .links > .icon {
+    .header-section .links > .icon {
         width: 40px;
         height: 40px;
         line-height: 40px;
@@ -881,7 +891,6 @@ p {
 .section-2 .wrap:last-child .icon {
     background-position-x: -267px;
 }
-
 /*--------End of styles for the section-2--------*/
 
 /*--------Styles for the section-3--------*/
